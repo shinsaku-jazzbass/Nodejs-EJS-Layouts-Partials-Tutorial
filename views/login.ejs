@@ -1,0 +1,22 @@
+<div class="panel-heading">ログイン</div>
+<div class="panel-body">
+    <% if (loginsw) { %>
+    <form method="post">
+        <div class="form-group form-group-lg">
+            <label><h3>Enter Userid</h3></label>
+            <input type="text" name="id" value="" class="form-control" required />
+        </div>
+        <div class="form-group form-group-lg">
+            <label><h3>Enter Password</h3></label>
+            <input type="password" name="password" class="form-control" required />
+        </div>
+        <div class="form-group form-group-lg">
+            <input type="submit" name="login" class="btn btn-info" value="Login" />
+        </div>
+    </form>
+    <br />
+    <% } else { %>
+        <p>ログインしました！！</p>
+        <a href="./logout"><button type="button" name="logoutbtn" id="logoutbtn" class="btn btn-success">Logout</button></a>
+      <% } %>
+</div>
